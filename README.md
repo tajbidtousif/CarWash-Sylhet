@@ -14,7 +14,7 @@ Utilizing the latest web technologies, CarWash Sylhet adapts effortlessly to var
 Elevate user engagement with interactive elements powered by Javascript, enhancing the overall user interaction and creating a memorable browsing experience.
 
 ## How to Contribute
-We welcome contributions from the community to enhance and refine CarWash Sylhet. Whether you're passionate about frontend development, design, or user experience, your expertise is valued. Fork this repository, make your improvements, and submit a pull request.
+I welcome contributions from the community to enhance and refine CarWash Sylhet. Whether you're passionate about frontend development, design, or user experience, your expertise is valued. Fork this repository, make your improvements, and submit a pull request.
 
 ## Getting Started
 1. Clone the repository: `https://github.com/tajbidtousif/CarWash-Sylhet.git`
