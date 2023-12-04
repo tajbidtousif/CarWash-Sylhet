@@ -114,7 +114,7 @@ html {
     right: 0;
     background: #fff;
     border-top: var(--border);
-    clip-path: polygon(0 0, 100% 0, 00);
+    clip-path: polygon(0 0, 100% 0, 0 0);
   }
 
   .header .navbar.active{
@@ -130,8 +130,8 @@ html {
   #menubar{
     display: block;
   }
-  #menubar.fa-bars{
-    transform: rotate(180deg);
+  #menubar.fa-xmark{
+    transform: rotate(360deg);
   }
 }
 
