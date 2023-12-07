@@ -5,8 +5,8 @@
   --light-yellow: #ffee80;
   --black: #130f40;
   --light-color: #666;
-  --border: 0.1rem solid rgba(0, 0, 0, .1);
-  --box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+  --border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 * {
@@ -83,20 +83,20 @@ html {
   display: none;
 }
 
-body{
+body {
   height: 900px;
 }
 
-.header.active{
+.header.active {
   box-shadow: var(--box-shadow);
   padding: 2rem 9%;
 }
 
-#menubar{
-    display: none;
+#menubar {
+  display: none;
 }
 
-.login-form-container{
+.login-form-container {
   position: fixed;
   top: -150%;
   left: 0;
@@ -110,12 +110,12 @@ body{
   opacity: 0;
 }
 
-.login-form-container.active{
+.login-form-container.active {
   top: 0;
   opacity: 1;
 }
 
-.login-form-container form{
+.login-form-container form {
   padding: 4rem;
   margin: 2rem;
   border-radius: 0.9rem;
@@ -126,28 +126,27 @@ body{
   width: 40rem;
 }
 
-.login-form-container form .buttons{
+.login-form-container form .buttons {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-.login-form-container form .btn{
+.login-form-container form .btn {
   display: block;
   width: 100%;
-  margin: .5rem 0;
+  margin: 0.5rem 0;
 }
 
-.login-form-container form h3{
+.login-form-container form h3 {
   color: var(--black);
   font-size: 2.8rem;
   padding-bottom: 1rem;
   text-transform: uppercase;
-
 }
 
-.login-form-container form .box{
-  margin: .7rem 0;
+.login-form-container form .box {
+  margin: 0.7rem 0;
   width: 100%;
   text-transform: none;
   color: var(--black);
@@ -155,70 +154,115 @@ body{
   padding: 1rem 1.2rem;
   border: var(--border);
   border-radius: 0.5rem;
-
 }
 
-.login-form-container form p{
+.login-form-container form p {
   padding: 1rem 0;
   font-size: 1.5rem;
   color: var(--light-color);
-
 }
 
-.login-form-container form p a{
+.login-form-container form p a {
   color: var(--yellow);
   text-decoration: none;
 }
 
-.login-form-container #close-login-btn{
- position: absolute;
- top: 1.5rem;
- right: 1.5rem;
- font-size: 5rem;
- color: var(--black);
- cursor: pointer;
+.login-form-container #close-login-btn {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font-size: 5rem;
+  color: var(--black);
+  cursor: pointer;
 }
 
-
-section{
+section {
   padding: 2rem 9%;
-
 }
 
-.home{
+.home {
   padding-top: 8rem;
   text-align: center;
   overflow: hidden;
 }
 
-.home h1{
-  margin-top: 0.9rem;
+.home h1 {
+  margin-top: 1rem;
   font-size: 3rem;
   text-transform: uppercase;
   color: var(--black);
   border: 1px solid #130f40;
   border-radius: 1rem;
   border-color: #130f40;
-
 }
 
-.home img{
+.home img {
   width: 100%;
-  margin: 1rem 0;
+  margin: 0.3rem 0;
 }
 
 .home a.btn {
-  margin-top: 0; /* Adjust the margin top to your preference */
-  padding: 0.2rem 3rem;
-  font-size: 1.9rem;
+  padding: 0.1rem 1rem;
+  font-size: 2rem;
 }
 
+.icon-container {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+  background: #eee;
+  cursor: pointer;
+}
 
+.icon-container .icon {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  background: #fff;
+  box-shadow: var(--box-shadow);
+  border-radius: 0.5rem;
+}
 
+.icon-container .icon i {
+  height: 6rem;
+  width: 6rem;
+  line-height: 6rem;
+  font-size: 2.5rem;
+  border-radius: 50%;
+  background: #eee;
+  color: var(--black);
+  text-align: center;
+}
 
+.icon-container .icon h3 {
+  color: var(--yellow);
+  font-size: 2.5rem;
+}
 
+.icon-container .icon:hover {
+  background: var(--black);
+}
 
+.icon-container .icon .content p {
+  color: var(--light-color);
+  font-size: 1.5rem;
+}
 
+.icon-container .icon:hover i {
+  color: var(--yellow);
+  cursor: pointer;
+}
+
+.icon-container .icon:hover h3 {
+  color: var(--yellow);
+}
+
+.icon-container .icon .content p {
+  color: #fff;
+}
 
 /*Media Quires*/
 
@@ -231,7 +275,7 @@ section{
     padding: 2rem;
   }
 
-  section{
+  section {
     padding: 2rem;
   }
 }
@@ -242,7 +286,7 @@ section{
   }
 
   .header #login-btn .btn {
-    display: none;      /*for hiding the button*/
+    display: none; /*for hiding the button*/
   }
 
   .header .navbar {
@@ -255,7 +299,7 @@ section{
     clip-path: polygon(0 0, 100% 0, 0 0);
   }
 
-  .header .navbar.active{
+  .header .navbar.active {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
 
@@ -265,21 +309,20 @@ section{
     font-size: 2rem;
   }
 
-  #menubar{
+  #menubar {
     display: block;
     font-size: 2.5rem;
     color: var(--light-color);
     cursor: pointer;
   }
 
-  #menubar.fa-xmark{
+  #menubar.fa-xmark {
     transform: rotate(180deg);
   }
 
-  .header.active{
+  .header.active {
     padding: 2rem;
   }
-
 }
 
 @media (max-width: 450px) {
